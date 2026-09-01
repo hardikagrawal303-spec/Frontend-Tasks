@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 75%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: navy;
+    color: white;
+}
+
+.break {
+    background-color: lightgray;
+}
+
+.lab {
+    background-color: lightgreen;
+}
+
+h2 {
+    text-align: center;
+}
