@@ -1,0 +1,202 @@
+
+body {
+    margin: 0;
+    background-color: #080d20;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #0d1530;
+    padding: 18px 0;
+    border-bottom: 1px solid #202b4b;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #55e6ff;
+}
+
+.nav-link {
+    color: #d4d9eb;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #55e6ff;
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 80% 45%, #182b55, #080d20 55%);
+}
+
+.tagline {
+    color: #55e6ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: #55e6ff;
+}
+
+.description {
+    color: #b9c4df;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 470px;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    background-color: #55e6ff;
+    color: #080d20;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: #080d20;
+    transform: scale(1.05);
+}
+
+.rocket-area {
+    position: relative;
+    padding: 50px 0;
+}
+
+.rocket {
+    font-size: 115px;
+    display: inline-block;
+    animation: fly 3s infinite alternate;
+}
+
+.planet {
+    font-size: 100px;
+    opacity: 0.9;
+}
+
+.stars {
+    color: #55e6ff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(15px) rotate(-8deg);
+    }
+
+    to {
+        transform: translateY(-25px) rotate(8deg);
+    }
+}
+
+.info-section {
+    padding: 75px 0;
+    background-color: #0b1228;
+}
+
+.info-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.info-section > .container > p {
+    color: #b9c4df;
+    margin-top: 15px;
+}
+
+.info-card {
+    background-color: #141e3b;
+    border: 1px solid #26365d;
+    border-radius: 15px;
+    padding: 30px 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    border-color: #55e6ff;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #b9c4df;
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #0d1530;
+    color: #b9c4df;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+        padding: 55px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rocket-area {
+        padding: 35px 0;
+    }
+
+    .rocket {
+        font-size: 90px;
+    }
+
+    .planet {
+        font-size: 75px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
