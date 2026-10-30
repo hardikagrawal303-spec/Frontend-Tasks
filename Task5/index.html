@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navratri Eligibility Checker</title>
+</head>
+<body>
+    <h2>Navratri Eligibility Checker</h2>
+    <script>
+        let date=prompt("Enter date of October:");
+
+        date=Number(date);
+
+        if(date>=11&&date<=19&&Number.isFinite(date)&&Number.isInteger(date)){
+            alert("You are eligible to celebrate Navratri!");
+        }else{
+            alert("You are not eligible to celebrate Navratri!");
+        }
+
+        let result=(date>=11&&date<=19&&Number.isFinite(date)&&Number.isInteger(date))?"You are eligible to celebrate Navratri!":"You are not eligible to celebrate Navratri!";
+
+        alert(result);
+
+        document.write("<h3>"+result+"</h3>");
+    </script>
+</body>
+</html>
