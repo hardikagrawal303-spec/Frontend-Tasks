@@ -9,24 +9,34 @@ h2 {
     color: darkblue;
 }
 
-#board {
-    width: 400px;
-    height: 400px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    border: 3px solid black;
+input {
+    padding: 10px;
 }
 
-.box {
-    width: 50px;
-    height: 50px;
+button {
+    padding: 8px;
+    margin: 3px;
+    cursor: pointer;
 }
 
-.white {
+ul {
+    width: 450px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: 2px solid steelblue;
+    padding: 10px;
+    margin: 10px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.black {
-    background-color: black;
+.done {
+    text-decoration: line-through;
+    color: gray;
 }
